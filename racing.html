@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing - My Links</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #666;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .race-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .race-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .race-info h3 {
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .race-details {
+            display: flex;
+            gap: 15px;
+            color: #666;
+        }
+
+        .race-details span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .race-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .action-button {
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .results-button {
+            background: #10b981;
+        }
+
+        .register-button {
+            background: #f59e0b;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Home
+    </a>
+
+    <div class="container">
+        <div class="profile">
+            <h1>Bikes!</h1>
+            <p>Upcoming and past cycling events</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Upcoming Rides</h2>
+            <div class="race-list">
+                <div class="race-item">
+                    <div class="race-info">
+                        <h3>Pinyons and Pines</h3>
+                        <div class="race-details">
+                            <span><i class="fas fa-calendar"></i> May 15, 2025</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Flagstaff, AZ</span>
+                            <span><i class="fas fa-road"></i> 340 mi</span>
+                        </div>
+                    </div>
+                    <div class="race-actions">
+                        <a href="https://danaernst.com/PinyonsPines/" class="action-button results-button"
+                            target="_blank" rel="noopener noreferrer">View
+                            Route</a>
+                        <a href="https://trackleaders.com/pinyonspines25" class="action-button results-button"
+                            target="_blank" rel="noopener noreferrer">Track
+                            Leaders</a>
+                    </div>
+                </div>
+                <div class="race-item">
+                    <div class="race-info">
+                        <h3>Oregon Timber Trail</h3>
+                        <div class="race-details">
+                            <span><i class="fas fa-calendar"></i> July 12th, 2025</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Deep Creek Forest Camp, OR</span>
+                            <span><i class="fas fa-road"></i> 700 mi</span>
+                        </div>
+                    </div>
+                    <div class="race-actions">
+                        <a href="https://ottrace.wordpress.com/" class="action-button results-button" target="_blank"
+                            rel="noopener noreferrer">
+                            Event Site</a>
+                    </div>
+                </div>
+                <div class="race-item">
+                    <div class="race-info">
+                        <h3>Smoke 'n' Fire 400</h3>
+                        <div class="race-details">
+                            <span><i class="fas fa-calendar"></i> September 4, 2024</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Boise, Idaho</span>
+                            <span><i class="fas fa-road"></i> 400 miles</span>
+                        </div>
+                    </div>
+                    <div class="race-actions">
+                        <a href="https://smokenfire420.wordpress.com/" class="action-button results-button"
+                            target="_blank" rel="noopener noreferrer">
+                            Event Info</a>
+                        <a href="https://smokenfire420.wordpress.com/rules/" class="action-button results-button"
+                            target="_blank" rel="noopener noreferrer">
+                            Rules</a>
+                    </div>
+                </div>
+                <div class="race-item">
+                    <div class="race-info">
+                        <h3>AZT300</h3>
+                        <div class="race-details">
+                            <span><i class="fas fa-calendar"></i> October 16, 2025</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Mexican Border Monument 103</span>
+                            <span><i class="fas fa-road"></i> 300 miles</span>
+                        </div>
+                    </div>
+                    <div class="race-actions">
+                        <a href="https://azt300-800.com/" class="action-button results-button">
+                            Event Info</a>
+                        <a href="https://azt300-800.com/rules/" class="action-button results-button">
+                            Rules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Past Races</h2>
+            <div class="race-list">
+                <div class="race-item">
+                    <div class="race-info">
+                        <h3>Stagecoach 400, ITT</h3>
+                        <div class="race-details">
+                            <span><i class="fas fa-calendar"></i> March 28, 2025</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Idyllwild, CA</span>
+                            <span><i class="fas fa-trophy"></i> 2 days, 23 hours, 40 minutes</span>
+                        </div>
+                    </div>
+                    <div class="race-actions">
+                        <a href="#" class="action-button results-button" target="_blank" rel="noopener noreferrer">View
+                            Results</a>
+                    </div>
+                </div>
+
+                <div class="race-item">
+                    <div class="race-info">
+                        <h3> Fire 'n Smoke 'n Fire</h3>
+                        <div class="race-details">
+                            <span><i class="fas fa-calendar"></i> September 7th, 2022</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Boise, ID</span>
+                            <span><i class="fas fa-trophy"></i> 15th Place, 2 days, 23 hours, 49 minutes</span>
+                        </div>
+                    </div>
+                    <div class="race-actions">
+                        <a href="https://smokenfire420.wordpress.com/results/" class="action-button results-button"
+                            target="_blank" rel="noopener noreferrer">View
+                            Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

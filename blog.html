@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - My Links</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #666;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .blog-post {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-header {
+            margin-bottom: 15px;
+        }
+
+        .post-title {
+            font-size: 20px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .post-meta {
+            display: flex;
+            gap: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .post-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .post-excerpt {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .post-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .post-tag {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #8b5cf6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #7c3aed;
+        }
+
+        .categories {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .category-button {
+            padding: 8px 16px;
+            background: #f1f5f9;
+            color: #4a5568;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .category-button:hover,
+        .category-button.active {
+            background: #8b5cf6;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Home
+    </a>
+
+    <div class="container">
+        <div class="profile">
+            <h1>My Blog</h1>
+            <p>Thoughts, tutorials, and insights</p>
+        </div>
+
+        <div class="content-section">
+            <div class="categories">
+                <a href="#" class="category-button active">All Posts</a>
+                <a href="#" class="category-button">Technology</a>
+                <a href="#" class="category-button">Cycling</a>
+                <a href="#" class="category-button">Life</a>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <div class="post-header">
+                        <h3 class="post-title">Getting Started with React Hooks</h3>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                            <span><i class="far fa-comment"></i> 12 comments</span>
+                        </div>
+                    </div>
+                    <p class="post-excerpt">
+                        A comprehensive guide to understanding and implementing React Hooks in your applications.
+                        Learn about useState, useEffect, and custom hooks with practical examples...
+                    </p>
+                    <div class="post-tags">
+                        <span class="post-tag">React</span>
+                        <span class="post-tag">JavaScript</span>
+                        <span class="post-tag">Web Development</span>
+                    </div>
+                    <a href="#" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+
+                <div class="blog-post">
+                    <div class="post-header">
+                        <h3 class="post-title">My First Century Ride</h3>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                            <span><i class="far fa-comment"></i> 5 comments</span>
+                        </div>
+                    </div>
+                    <p class="post-excerpt">
+                        Sharing my experience of completing my first 100-mile bike ride, including training tips,
+                        nutrition strategies, and lessons learned along the way...
+                    </p>
+                    <div class="post-tags">
+                        <span class="post-tag">Cycling</span>
+                        <span class="post-tag">Training</span>
+                        <span class="post-tag">Fitness</span>
+                    </div>
+                    <a href="#" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+
+                <div class="blog-post">
+                    <div class="post-header">
+                        <h3 class="post-title">Building a Personal Website</h3>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 5, 2024</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                            <span><i class="far fa-comment"></i> 8 comments</span>
+                        </div>
+                    </div>
+                    <p class="post-excerpt">
+                        A step-by-step guide to creating your own personal website using modern web technologies.
+                        From design to deployment, learn how to showcase your work effectively...
+                    </p>
+                    <div class="post-tags">
+                        <span class="post-tag">Web Design</span>
+                        <span class="post-tag">HTML/CSS</span>
+                        <span class="post-tag">Tutorial</span>
+                    </div>
+                    <a href="#" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
