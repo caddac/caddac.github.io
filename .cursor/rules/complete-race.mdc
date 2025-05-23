@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+### Task 
+
+Move an "upcoming race" to "past results"
+
+### Requirements
+
+Move the existing race item to the "past results"
+race results should be order, most recent result at the top
+all race results should have:
+* Finish status, either time to finish or some other status (like scratched)
+* A link to the race results (ask for this)
+* a link to a blog post, which goes in the "blog" directory. Create this page.

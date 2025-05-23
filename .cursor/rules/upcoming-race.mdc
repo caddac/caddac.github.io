@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+### Task
+
+Add a new upcoming race to the racing.html page.
+
+### Requirements
+
+* all upcoming races should be in order, soonest at the top
+* all races should have the following information:
+    - date
+    - start location
+    - distance
+    - race title
+    - link to race site
+prompt for these values if they are not provided

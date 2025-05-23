@@ -1,0 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+### Task
+
+write a blog post describing the race.
+
+### Requirements
+
+Ask for after ride notes to generate the post from
+The blog post should update an existing file in the "blog" directory
